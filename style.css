@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+fieldset {
+    max-width: 380px;
+    margin: 35px 0 0 50px;
+    /* border: 1px solid #1f1d1d; */
+    padding: 20px;
+    margin: 0 auto;
+
+}
+legend{
+    font-weight: 500;
+}
+label {
+    float: left;
+    width: 150px;
+    display: block;
+    clear: left;
+    text-align: left;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    /* width: 130px; */
+}
+
+button{
+    border-radius: 20px;
+    box-shadow: 0 0 0.25em grey;
+    border: none;
+    padding: 5px;
+    background-color: #b0e0e6;
+    margin-right: 4px;
+}
+button:hover{
+    background-color: #7ddae6;
+}
+#result{
+    height: 70px;
+    text-align: center;
+}
+#bmi {
+    font-size: 2em;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+}
+.speedometer {
+    position: relative;
+    border-radius: 100px 100px 0 0;
+    width: 200px;
+    height: 100px;
+    border: 1px solid;
+    overflow: hidden;
+  }
+
+  #needle {
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background-color: #ff0000;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transform: translateX(10%) rotate(0deg);
+    transition: transform 0.5s ease;
+  }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI CALCULATOR</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+<body>
+<center>
+<div>
+    <form action="none" method="post" name="bmiform">
+        <fieldset>
+            <legend>Height and Weight</legend>
+            <label for="kg">Weight (kg):</label>
+            <input type="text" name="kg" id="kg">
+            <br>
+            <label for="inches">Height (inches):</label>
+            <input type="text" name="inches" id="inches">
+            <br>
+            <button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()">Calculate Your BMI</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+        <fieldset>
+            <legend>BMI</legend>
+            <h3>Calculated BMI:</h3>
+            <input type="text" name="bmi" id="bmi" readonly>
+        </fieldset>
+        <fieldset>
+            <legend>Result</legend>
+            <div id="result"></div>
+            <div class="arrow">
+                <div class="speedometer">
+                <div id="needle"></div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</center>
+</body>
+
+</html>
