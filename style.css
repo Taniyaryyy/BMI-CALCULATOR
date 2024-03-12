@@ -54,7 +54,30 @@ button:hover{
     height: 50px;
     width: 100px;
 }
+.texts{
+    position: relative;
+}
+.texts > h5:nth-child(1){
+    color: blue;
+    position: absolute;
+    top: 80px;
+    left: -20px;
+}
+.texts > h5:nth-child(2){
+    color: green;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+}
+.texts > h5:nth-child(3){
+    position: absolute;
+    right: 0;
+    top: 80px;
+    color:red;
+}
 .speedometer {
+    /* background-color: #b0e0e6; */
     position: relative;
     border-radius: 100px 100px 0 0;
     width: 200px;
@@ -66,7 +89,8 @@ button:hover{
   #needle {
     position: absolute;
     width: 4px;
-    height: 100px;
+    height: 104px;
+    /* border: 1px solid; */
     background-color: #ff0000;
     left: 50%;
     transform-origin: 50% 100%;

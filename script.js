@@ -11,11 +11,11 @@ function calcBMI() {
     const kg = document.getElementById('kg').value;
     // needle code going here
     const needle = document.getElementById('needle');
-    if (inches && kg) {
+    if (inches > 0 && kg > 0) {
         if (value < 18.4) {
             result.innerHTML = '<h3>You are underweight hehe</h3>'
             needle.style.transform = 'rotate(-70deg)'
-            result.style.color = 'green'
+            result.style.color = 'blue'
         }
         else if (value >= 18.4 && value <= 24.9) {
             result.innerHTML = '<h3>You are healthy!!</h3>'
@@ -34,6 +34,6 @@ function calcBMI() {
     else {
         const bmiinput = document.getElementById('bmi')
         bmiinput.textContent = ""
-        alert("Enter some value!")
+        alert("Enter some value or Enter Positive Value!")
     }
 }
